@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+
 
 class AppPhoto {
   static String background_splash = 'assets/images/Rectangle 1.png';
@@ -16,4 +16,12 @@ class AppPhoto {
   static String time_icon = 'assets/icons/ic_time.png';
   static String quran_icon = 'assets/icons/quran.png';
   static String sabha_icon = 'assets/icons/sabha.png';
+  static String welcome_onboard = 'assets/images/welcome.png';
+  static String kabb2 = 'assets/images/kabba 2.png';
+  static String picture3_in_onboarding =
+      'assets/images/picture3pnonboarding.png';
+  static String picture4_in_onboarding =
+      'assets/images/picture4inonboarding.png';
+  static String picture5_in_onboarding =
+      'assets/images/picture5inonboarding.png';
 }

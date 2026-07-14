@@ -22,7 +22,7 @@ class _LayoutState extends State<Layout> {
   List<Widget> taps = [
     QuranTap(),
     HadithTap(),
-    Sbhatap(),
+    Sabhatap(),
     RadioTap(),
     TimeTap(),
   ];

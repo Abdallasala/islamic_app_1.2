@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../core/constant/app_photo_constant.dart';
 
-class Sbhatap extends StatelessWidget {
-  const Sbhatap({super.key});
+class Sabhatap extends StatelessWidget {
+  const Sabhatap({super.key});
 
   @override
   Widget build(BuildContext context) {

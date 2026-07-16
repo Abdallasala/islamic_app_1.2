@@ -24,4 +24,5 @@ class AppPhoto {
       'assets/images/picture4inonboarding.png';
   static String picture5_in_onboarding =
       'assets/images/picture5inonboarding.png';
+  static String islami = 'assets/images/Islami.png';
 }

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:islamic_app_1/feature/layout/pages/layout.dart';
 import 'package:islamic_app_1/feature/splash/pages/splash_page.dart';
 
+import 'feature/onboarding screen/pages/on_boarding pages.dart';
+
 void main() {
   runApp(const IslamicApp());
 }
@@ -20,7 +22,10 @@ class IslamicApp extends StatelessWidget {
         },
         Layout.routename: (_) {
           return Layout();
-        }
+        },
+        Onboardingpages.routename: (_) {
+          return Onboardingpages();
+        },
       },
     );
   }

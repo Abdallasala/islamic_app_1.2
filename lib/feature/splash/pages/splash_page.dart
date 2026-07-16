@@ -1,7 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:islamic_app_1/core/constant/app_photo_constant.dart';
-import 'package:islamic_app_1/feature/layout/pages/layout.dart';
+import 'package:islamic_app_1/feature/onboarding%20screen/pages/on_boarding%20pages.dart';
 
 class SplashPage extends StatefulWidget {
   static String routename = 'splash';
@@ -19,7 +19,7 @@ class _SplashPageState extends State<SplashPage> {
     // TODO: implement initState
     super.initState();
     Future.delayed(Duration(seconds: 2), () {
-      Navigator.pushReplacementNamed(context, Layout.routename);
+      Navigator.pushReplacementNamed(context, Onboardingpages.routename);
     });
   }
 

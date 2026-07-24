@@ -25,4 +25,10 @@ class AppPhoto {
   static String picture5_in_onboarding =
       'assets/images/picture5inonboarding.png';
   static String islami = 'assets/images/Islami.png';
+  static String islami_logo1 = 'assets/images/islami_logo1.1.png';
+
+  static String quran_icon1 = 'assets/images/quran_icon.png';
+
+  static String quran_most_recently = 'assets/images/img_most_recent.png';
+  static String sura_quran_icon = 'assets/images/sura -img_icon.png';
 }

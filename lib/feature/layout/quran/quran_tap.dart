@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islamic_app_1/core/constant/app_photo_constant.dart';
 import 'package:islamic_app_1/core/model/recent_data.dart';
 import 'package:islamic_app_1/core/theme/app_color.dart';
+import 'package:islamic_app_1/feature/layout/quran/quran_details_screen.dart';
 import 'package:islamic_app_1/feature/layout/quran/widgets/recently.dart';
 import 'package:islamic_app_1/feature/layout/quran/widgets/suracardwidget.dart';
 
@@ -264,8 +265,17 @@ class QuranTap extends StatelessWidget {
               child: ListView.separated(
                 physics: NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
-                itemBuilder: (context, index) => Suracardwidget(
-                  suradata: surahs[index],
+                itemBuilder: (context, index) => GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(
+                      context,
+                      QuranDetailsScreen.routename,
+                      arguments: surahs[index],
+                    );
+                  },
+                  child: Suracardwidget(
+                    suradata: surahs[index],
+                  ),
                 ),
                 separatorBuilder: (context, int index) => Divider(
                   endIndent: 60,

@@ -59,7 +59,7 @@ class Suracardwidget extends StatelessWidget {
         ),
         Spacer(),
         Text(
-          suradata.nameEn,
+          suradata.nameAr,
           style: TextStyle(
             fontSize: size.height * 20 / 862,
             fontWeight: FontWeight.bold,

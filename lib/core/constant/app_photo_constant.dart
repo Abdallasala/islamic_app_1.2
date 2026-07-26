@@ -31,4 +31,6 @@ class AppPhoto {
 
   static String quran_most_recently = 'assets/images/img_most_recent.png';
   static String sura_quran_icon = 'assets/images/sura -img_icon.png';
+  static String sura_quran_details =
+      'assets/images/shora_details_background.png';
 }

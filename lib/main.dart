@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islamic_app_1/feature/layout/pages/layout.dart';
+import 'package:islamic_app_1/feature/layout/quran/quran_details_screen.dart';
 import 'package:islamic_app_1/feature/splash/pages/splash_page.dart';
 
 import 'feature/onboarding screen/pages/on_boarding pages.dart';
@@ -25,6 +26,9 @@ class IslamicApp extends StatelessWidget {
         },
         Onboardingpages.routename: (_) {
           return Onboardingpages();
+        },
+        QuranDetailsScreen.routename: (_) {
+          return QuranDetailsScreen();
         },
       },
     );

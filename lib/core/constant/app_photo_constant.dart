@@ -33,4 +33,8 @@ class AppPhoto {
   static String sura_quran_icon = 'assets/images/sura -img_icon.png';
   static String sura_quran_details =
       'assets/images/shora_details_background.png';
+  static String hadith_layout_background =
+      'assets/images/hadith_background.png';
+  static String hadith_scroll = 'assets/images/hadith_scroll.png';
+  static String logo_hadith_islami = 'assets/images/Logo_in_hadith.png';
 }

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:islamic_app_1/core/constant/app_photo_constant.dart';
-import 'package:islamic_app_1/core/model/recent_data.dart';
+import 'package:islamic_app_1/core/model/surah_data.dart';
 import 'package:islamic_app_1/core/theme/app_color.dart';
 
 class RecentlyCardWidget extends StatelessWidget {
   RecentlyCardWidget({super.key, required this.recentData});
 
-  final RecentData recentData;
+  final Surah recentData;
 
   @override
   Widget build(BuildContext context) {
@@ -25,19 +25,19 @@ class RecentlyCardWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text(
-                recentData.suranameEn,
+                recentData.nameEn,
                 style: TextStyle(
                     fontSize: size.height * 24 / 862,
                     fontWeight: FontWeight.bold),
               ),
               Text(
-                recentData.suranameAR,
+                recentData.nameEn,
                 style: TextStyle(
                     fontSize: size.height * 24 / 862,
                     fontWeight: FontWeight.bold),
               ),
               Text(
-                recentData.suraVersanumber,
+                '${recentData.versesCount} verses',
                 style: TextStyle(
                     fontSize: size.height * 14 / 862,
                     fontWeight: FontWeight.bold),

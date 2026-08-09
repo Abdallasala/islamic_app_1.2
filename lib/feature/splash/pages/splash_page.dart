@@ -3,6 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:islamic_app_1/core/constant/app_photo_constant.dart';
 import 'package:islamic_app_1/feature/onboarding%20screen/pages/on_boarding%20pages.dart';
 
+import '../../../core/constant/local_storge_key.dart';
+import '../../../core/services/local_storge_shared_perfence.dart';
+import '../../layout/pages/layout.dart';
+
 class SplashPage extends StatefulWidget {
   static String routename = 'splash';
   static Duration _duration = Duration(milliseconds: 1750);
@@ -18,8 +22,13 @@ class _SplashPageState extends State<SplashPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+
     Future.delayed(Duration(seconds: 2), () {
-      Navigator.pushReplacementNamed(context, Onboardingpages.routename);
+      var isFirstTime =
+          LocalStorageServices.getbool(LocalStorgeKey.isFirstTime) ?? true;
+
+      Navigator.pushReplacementNamed(
+          context, isFirstTime ? Onboardingpages.routename : Layout.routename);
     });
   }
 

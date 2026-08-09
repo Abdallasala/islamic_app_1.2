@@ -16,6 +16,7 @@ class HadithTap extends StatefulWidget {
 class _HadithTapState extends State<HadithTap> {
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     if (hadithList.isEmpty) _loadHadithFromAssets();
     return Container(
       decoration: BoxDecoration(
@@ -25,7 +26,10 @@ class _HadithTapState extends State<HadithTap> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Image.asset(AppPhoto.islami_logo1),
+          Image.asset(
+            AppPhoto.islami_logo1,
+            height: size.height * .15,
+          ),
           CarouselSlider(
               items: hadithList
                   .map(

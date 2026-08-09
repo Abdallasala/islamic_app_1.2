@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islamic_app_1/core/constant/app_photo_constant.dart';
+import 'package:islamic_app_1/core/constant/local_storge_key.dart';
+import 'package:islamic_app_1/core/services/local_storge_shared_perfence.dart';
 import 'package:islamic_app_1/feature/layout/pages/layout.dart';
 import 'package:islamic_app_1/feature/onboarding%20screen/widgets/bording%20item.dart';
 
@@ -18,6 +20,14 @@ class Onboardingpages extends StatefulWidget {
 class _OnboardingpagesState extends State<Onboardingpages> {
   final controller = PageController();
   int currentindex = 0;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    LocalStorageServices.setbool(LocalStorgeKey.isFirstTime, false);
+  }
+
   List<BoardingModel> boarding = [
     BoardingModel(
       image: AppPhoto.welcome_onboard,

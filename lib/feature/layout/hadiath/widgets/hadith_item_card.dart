@@ -11,8 +11,10 @@ class HadithItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
     return Container(
       width: double.infinity,
+      height: size.height * .15,
       margin: EdgeInsets.only(top: 10, bottom: 20),
       decoration: BoxDecoration(
         image: DecorationImage(
@@ -25,13 +27,16 @@ class HadithItemCard extends StatelessWidget {
           physics: ClampingScrollPhysics(),
           child: Column(
             children: [
-              Text(
-                hadithData.hadithTitle,
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 24,
-                    color: AppColor.scendrycolor),
+              Padding(
+                padding: const EdgeInsets.only(top: 20),
+                child: Text(
+                  hadithData.hadithTitle,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                      color: AppColor.scendrycolor),
+                ),
               ),
               SizedBox(
                 height: 30,
@@ -41,7 +46,7 @@ class HadithItemCard extends StatelessWidget {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: 24,
+                    fontSize: 16,
                     color: AppColor.scendrycolor),
               ),
             ],

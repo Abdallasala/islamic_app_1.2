@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:islamic_app_1/core/services/local_storge_shared_perfence.dart';
 import 'package:islamic_app_1/feature/layout/pages/layout.dart';
 import 'package:islamic_app_1/feature/layout/quran/quran_details_screen.dart';
 import 'package:islamic_app_1/feature/splash/pages/splash_page.dart';
 
 import 'feature/onboarding screen/pages/on_boarding pages.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await LocalStorageServices.init();
   runApp(const IslamicApp());
 }
 

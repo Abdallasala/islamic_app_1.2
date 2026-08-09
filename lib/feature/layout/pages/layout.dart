@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:islamic_app_1/core/constant/app_photo_constant.dart';
 import 'package:islamic_app_1/core/theme/app_color.dart';
-import 'package:islamic_app_1/feature/layout/pages/hadith_tap.dart';
-import 'package:islamic_app_1/feature/layout/pages/quran_tap.dart';
-import 'package:islamic_app_1/feature/layout/pages/radio_tap.dart';
-import 'package:islamic_app_1/feature/layout/pages/spha_tap.dart';
-import 'package:islamic_app_1/feature/layout/pages/time_tap.dart';
+import 'package:islamic_app_1/feature/layout/hadiath/hadith_tap.dart';
+import 'package:islamic_app_1/feature/layout/quran/quran_tap.dart';
+import 'package:islamic_app_1/feature/layout/radio/radio_tap.dart';
+import 'package:islamic_app_1/feature/layout/spha/spha_tap.dart';
+import 'package:islamic_app_1/feature/layout/time/time_tap.dart';
 import 'package:islamic_app_1/feature/layout/widgets/custom_nav_bar.dart';
 
 class Layout extends StatefulWidget {

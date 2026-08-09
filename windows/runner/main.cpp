@@ -27,7 +27,7 @@ CreateAndAttachConsole();
 ::CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED
 );
 
-flutter::DartProject project(L"data");
+flutter::DartProject project(L"model");
 
 std::vector <std::string> command_line_arguments =
         GetCommandLineArguments();

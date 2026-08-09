@@ -36,6 +36,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   animate_do: ^3.3.4
+  carousel_slider: ^5.1.2
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:
@@ -63,7 +65,8 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
-
+    - assets/files/hadith/
+    - assets/files/quran/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
